@@ -55,7 +55,7 @@ int is_valid(Node* n){
   arregloNumeros[7] = 0;
   arregloNumeros[8] = 0;
 
-  int i, j, k//, numero;
+  int i, j, k;//, numero;
 
   for (i = 1 ; i < 10 ;i++){
     for ( j = 0 ; j < 9 ; j++){
