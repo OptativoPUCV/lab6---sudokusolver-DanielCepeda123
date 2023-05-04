@@ -320,3 +320,9 @@ sudoku.c:47:7: error: unused variable ‘filas’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 162cd93
+Thu 04 May 2023 05:21:21 PM UTC: 
+ sudoku.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  5|3
+total_score: 35/70
+3e3beb6

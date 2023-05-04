@@ -44,8 +44,6 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-  int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
   
 
   int i,j, num;
