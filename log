@@ -20,3 +20,17 @@ sudoku.c:55:7: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ce8229b
+Thu 04 May 2023 02:04:12 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:61:30: error: expected expression before ‘==’ token
+   61 |           if (n->sudo[i][j]) == 0{
+      |                              ^~
+sudoku.c:55:7: error: unused variable ‘cont’ [-Werror=unused-variable]
+   55 |   int cont = 1;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+de157cf
