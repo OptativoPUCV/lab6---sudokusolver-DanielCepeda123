@@ -56,7 +56,7 @@ int is_valid(Node* n){
   arregloNumeros[8] = 0;
 
   int i, j, k;
-
+  
     for ( j = 0 ; j < 9 ; j++){
       for ( k = 0 ; k < 9 ; k++){
         i = n->sudo[j][k];
@@ -73,10 +73,11 @@ int is_valid(Node* n){
 List* get_adj_nodes(Node* n){
     List* list=createList();
 
+  int i,j;
   
-  for(int i = 0 ; i < 9 ; i++)
+  for( i = 0 ; i < 9 ; i++)
     {
-      for(int j = 0 ; j < 9 ; j++)
+      for( j = 0 ; j < 9 ; j++)
         {
           if (n->sudo[i][j] == 0){
             for (int k = 1 ; k < 10 ; k++ ){
