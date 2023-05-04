@@ -108,3 +108,15 @@ sudoku.c:55:7: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 758cc07
+Thu 04 May 2023 03:14:02 PM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:64:15: error: implicit declaration of function ‘pushback’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   64 |               pushback(list, nuevoNodo);
+      |               ^~~~~~~~
+      |               pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+757a921
