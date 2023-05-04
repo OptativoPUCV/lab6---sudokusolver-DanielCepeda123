@@ -81,3 +81,30 @@ sudoku.c:64:34: error: invalid use of incomplete typedef ‘List’
       |                                  ^~
 Compilation failed
 2011763
+Thu 04 May 2023 03:13:45 PM UTC: 
+ sudoku.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:3: error: expected ‘,’ or ‘;’ before ‘for’
+   57 |   for(int i = 0 ; i < 9 ; i++)
+      |   ^~~
+sudoku.c:57:19: error: ‘i’ undeclared (first use in this function)
+   57 |   for(int i = 0 ; i < 9 ; i++)
+      |                   ^
+sudoku.c:57:19: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:57:30: error: expected ‘;’ before ‘)’ token
+   57 |   for(int i = 0 ; i < 9 ; i++)
+      |                              ^
+      |                              ;
+sudoku.c:57:30: error: expected statement before ‘)’ token
+sudoku.c:65:15: error: implicit declaration of function ‘pushback’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   65 |               pushback(list, nuevoNodo);
+      |               ^~~~~~~~
+      |               pushBack
+sudoku.c:55:7: error: unused variable ‘cont’ [-Werror=unused-variable]
+   55 |   int cont = 1
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+758cc07
