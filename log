@@ -126,3 +126,14 @@ Thu 04 May 2023 03:14:15 PM UTC:
  tests:  2|4
 total_score: 15/70
 8b4c4ba
+Thu 04 May 2023 04:09:12 PM UTC: 
+ sudoku.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:62:13: error: ‘k’ undeclared (first use in this function)
+   62 |       for ( k = 0 ; k < 9 ; k++){
+      |             ^
+sudoku.c:62:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0705f7c
