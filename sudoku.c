@@ -63,7 +63,17 @@ int is_valid(Node* n){
         if (arregloNumeros[i - 0] == 1) return 0;
         if (arregloNumeros[i - 0] == i) arregloNumeros[i - 0] = 1;
       }
-    }
+    } 
+
+  int p;
+   for (k = 0 ; k <= 9 ; k++){  
+    for(p=0;p<9;p++){
+      int i=3*(k/3) + (p/3) ;
+      int j=3*(k%3) + (p%3) ;
+      //printf("%d ",n->sudo[i][j]);
+      //if(p%3 == 2) printf("\n");
+      }
+ }
   
 
     return 1;
