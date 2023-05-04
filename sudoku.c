@@ -44,16 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int arregloNumeros[9];
-  arregloNumeros[0] = 0;
-  arregloNumeros[1] = 0;
-  arregloNumeros[2] = 0;
-  arregloNumeros[3] = 0;
-  arregloNumeros[4] = 0;
-  arregloNumeros[5] = 0;
-  arregloNumeros[6] = 0;
-  arregloNumeros[7] = 0;
-  arregloNumeros[8] = 0;
+  int arregloNumeros[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
 
   int i, j, k;
   
@@ -63,8 +54,12 @@ int is_valid(Node* n){
         if (arregloNumeros[i - 0] == 1) return 0;
         if (arregloNumeros[i - 0] == i) arregloNumeros[i - 0] = 1;
       }
+      arregloNumeros[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
     } 
 
+
+
+  
   int p;
    for (k = 0 ; k <= 9 ; k++){  
     for(p=0;p<9;p++){
