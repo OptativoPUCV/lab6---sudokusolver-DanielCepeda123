@@ -48,7 +48,7 @@ int is_valid(Node* n){
   int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
   
 
-  int i,j, mun, num;
+  int i,j, num;
 
   for(i = 0 ; i < 9 ; i++){
     int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
