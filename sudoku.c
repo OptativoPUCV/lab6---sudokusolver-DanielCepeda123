@@ -44,35 +44,27 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int arregloNumeros[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-
-  int i, j, k = 0;
+  int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+  int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
   
-    /*for ( j = 0 ; j < 9 ; j++){
-      for ( k = 0 ; k < 9 ; k++){
-        i = n->sudo[k][j];
-        if (arregloNumeros[i - 0] == 1) return 0;
-        if (arregloNumeros[i - 0] == i) arregloNumeros[i - 0] = 1;
-      }
-      arregloNumeros[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-    } */
 
-  for (j = 0 ; j < 9 ; j++){
-    i = n->sudo[j][k];
-    if (arregloNumeros[i - 0] == 1) return 0;
-    if (arregloNumeros[i - 0] == i) arregloNumeros[i - 0] = 1;
-    k++;
+  int i,j, mun, num;
+
+  for(i = 0 ; i < 9 ; i++){
+    int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    for(j = 0 ; j < 9 ; j++){
+      num = n->sudo[i][j];
+      if(num != 0){
+        if(filas[num] == 0){
+          filas[num] = 1;
+        }
+        else{
+          return 0;
+        }
+      }
+    }
   }
-  
-  int p;
-   for (k = 0 ; k <= 9 ; k++){  
-    for(p=0;p<9;p++){
-       i=3*(k/3) + (p/3) ;
-       j=3*(k%3) + (p%3) ;
-      //printf("%d ",n->sudo[i][j]);
-      //if(p%3 == 2) printf("\n");
-      }
- }
   
 
     return 1;
