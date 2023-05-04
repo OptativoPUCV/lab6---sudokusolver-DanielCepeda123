@@ -242,3 +242,13 @@ sudoku.c:57:27: error: expected expression before ‘{’ token
       |                           ^
 Compilation failed
 07f37f8
+Thu 04 May 2023 05:06:25 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:57:27: error: expected expression before ‘{’ token
+   57 |       arregloNumeros[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+      |                           ^
+Compilation failed
+01f890d
