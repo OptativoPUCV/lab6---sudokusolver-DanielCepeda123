@@ -252,3 +252,14 @@ sudoku.c:57:27: error: expected expression before ‘{’ token
       |                           ^
 Compilation failed
 01f890d
+Thu 04 May 2023 05:09:11 PM UTC: 
+ sudoku.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:13: error: ‘k’ is used uninitialized [-Werror=uninitialized]
+   49 |   int i, j, k;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+d822ad5

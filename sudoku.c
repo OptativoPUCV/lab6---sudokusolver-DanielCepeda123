@@ -48,15 +48,21 @@ int is_valid(Node* n){
 
   int i, j, k;
   
-    for ( j = 0 ; j < 9 ; j++){
+    /*for ( j = 0 ; j < 9 ; j++){
       for ( k = 0 ; k < 9 ; k++){
         i = n->sudo[k][j];
         if (arregloNumeros[i - 0] == 1) return 0;
         if (arregloNumeros[i - 0] == i) arregloNumeros[i - 0] = 1;
       }
       arregloNumeros[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-    } 
+    } */
 
+  for (j = 0 ; j < 9 ; j++){
+    i = n->sudo[j][k];
+    if (arregloNumeros[i - 0] == 1) return 0;
+    if (arregloNumeros[i - 0] == i) arregloNumeros[i - 0] = 1;
+    k++;
+  }
   
   int p;
    for (k = 0 ; k <= 9 ; k++){  
