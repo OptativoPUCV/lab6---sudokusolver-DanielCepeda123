@@ -77,9 +77,18 @@ int is_valid(Node* n){
   }
 
   for(k = 0; k < 9 ; k++){
+    int submatriz[10] = {0,0,0,0,0,0,0,0,0};
     for(p=0;p<9;p++){
-      i=3*(k/3) + (p/3) ;
-      j=3*(k%3) + (p%3) ;
+      i=3*(k/3) + (p/3);
+      j=3*(k%3) + (p%3);
+      num = n->sudo[i][j];
+      if(num != 0){
+        if(submatriz[num - 1] == 0){
+          submatriz[num - 1] = 1;
+        }else{
+          return 0;
+        }
+      }
       //printf("%d ",nodo->sudo[i][j]);
       //if(p%3 == 2) printf("\n");
     }
