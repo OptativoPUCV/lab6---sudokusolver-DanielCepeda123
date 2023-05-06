@@ -46,12 +46,9 @@ void print_node(Node* n){
 int is_valid(Node* n){
   
   int i, j, k, p, num;
-  int filas[10] = {0,0,0,0,0,0,0,0,0};
-  int columnas[10] = {0,0,0,0,0,0,0,0,0};
-  int submatriz[10] = {0,0,0,0,0,0,0,0,0};
 
   for(i = 0 ; i < 9 ; i++){
-    filas[10] = {0,0,0,0,0,0,0,0,0};
+    int filas[10] = {0,0,0,0,0,0,0,0,0};
     for(j = 0 ; j < 9 ; j++){
       num = n->sudo[i][j];
       if (num != 0){
@@ -65,7 +62,7 @@ int is_valid(Node* n){
   }
 
   for (i = 0 ; i < 9 ; i++){
-    columnas[10] = {0,0,0,0,0,0,0,0,0};
+    int columnas[10] = {0,0,0,0,0,0,0,0,0};
     for(j = 0 ; j < 9 ; j++){
       num = n->sudo[j][i];
       if(num != 0){
@@ -79,7 +76,7 @@ int is_valid(Node* n){
   }
 
   for(k = 0; k < 9 ; k++){
-    submatriz[10] = {0,0,0,0,0,0,0,0,0};
+    int submatriz[10] = {0,0,0,0,0,0,0,0,0};
     for(p=0;p<9;p++){
       i=3*(k/3) + (p/3);
       j=3*(k%3) + (p%3);
