@@ -61,6 +61,20 @@ int is_valid(Node* n){
       }
     }
   }
+
+  for (i = 0 ; i < 9 ; i++){
+    int columnas[10] = {0,0,0,0,0,0,0,0,0};
+    for(j = 0 ; j < 9 ; j++){
+      num = n->sudo[j][i];
+      if(num != 0){
+        if(columnas[num - 1] == 0){
+          columnas[num - 1] = 1;
+        }else{
+          return 0;
+        }
+      }
+    }
+  }
   
   return 1;
 }
