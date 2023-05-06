@@ -114,9 +114,10 @@ List* get_adj_nodes(Node* n){
           if (n->sudo[i][j] == 0){
             for ( k = 1 ; k <= 9 ; k++ ){
               Node* nuevoNodo = copy(n);
-              if (is_valid(nuevoNodo) == 0) break;
-              nuevoNodo->sudo[i][j] = k;
-              pushBack(list, nuevoNodo);
+              if (is_valid(nuevoNodo) == 1){
+                nuevoNodo->sudo[i][j] = k;
+                pushBack(list, nuevoNodo);
+              }
             }
               
           }
