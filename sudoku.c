@@ -90,8 +90,6 @@ int is_valid(Node* n){
         }
       }
       
-      //printf("%d ",n->sudo[i][j]);
-      //if(p%3 == 2) printf("\n");
     }
     
       
@@ -103,7 +101,7 @@ int is_valid(Node* n){
 
 
 List* get_adj_nodes(Node* n){
-    List* list=createList();
+  List* list=createList();
 
   int i, j, k;
   
@@ -117,6 +115,8 @@ List* get_adj_nodes(Node* n){
               if (is_valid(nuevoNodo) == 1){
                 nuevoNodo->sudo[i][j] = k;
                 pushBack(list, nuevoNodo);
+              }else{
+                break;
               }
             }
               
