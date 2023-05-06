@@ -52,8 +52,8 @@ int is_valid(Node* n){
     for(j = 0 ; j < 9 ; j++){
       num = n->sudo[i][j];
       if (num != 0){
-        if(filas[num - 1] == 0){
-           filas[num - 1] = 1; 
+        if(filas[num] == 0){
+           filas[num] = 1; 
         }else{
           return 0;
         } 
@@ -66,8 +66,8 @@ int is_valid(Node* n){
     for(j = 0 ; j < 9 ; j++){
       num = n->sudo[j][i];
       if(num != 0){
-        if(columnas[num - 1] == 0){
-          columnas[num - 1] = 1;
+        if(columnas[num] == 0){
+          columnas[num] = 1;
         }else{
           return 0;
         }
@@ -82,8 +82,8 @@ int is_valid(Node* n){
       j=3*(k%3) + (p%3);
       num = n->sudo[i][j];
       if(num != 0){
-        if(submatriz[num - 1] == 0){
-          submatriz[num - 1] = 1;
+        if(submatriz[num] == 0){
+          submatriz[num] = 1;
         }else{
           return 0;
         }
