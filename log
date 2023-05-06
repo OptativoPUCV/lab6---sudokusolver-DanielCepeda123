@@ -375,3 +375,23 @@ Thu 04 May 2023 05:30:42 PM UTC:
  tests:  5|3
 total_score: 35/70
 61c0fb1
+Sat 06 May 2023 08:16:40 PM UTC: 
+ sudoku.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:83:11: error: unused variable ‘j’ [-Werror=unused-variable]
+   83 |       int j=3*(k%3) + (p%3);
+      |           ^
+sudoku.c:82:11: error: unused variable ‘i’ [-Werror=unused-variable]
+   82 |       int i=3*(k/3) + (p/3);
+      |           ^
+sudoku.c:79:9: error: unused variable ‘columnas’ [-Werror=unused-variable]
+   79 |     int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+      |         ^~~~~~~~
+sudoku.c:78:9: error: unused variable ‘filas’ [-Werror=unused-variable]
+   78 |     int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+830c236
