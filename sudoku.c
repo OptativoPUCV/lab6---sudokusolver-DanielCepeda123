@@ -87,35 +87,42 @@ int is_valid(Node* n){
         }
       }
     }
-}    
+  }    
   return 1;
 }
-
 
 List* get_adj_nodes(Node* n){
   List* list=createList();
 
   int i, j, k;
+  int valid;
   
-  for( i = 0 ; i < 9 ; i++)
-    {
-      for( j = 0 ; j < 9 ; j++)
-        {
-          if (n->sudo[i][j] == 0){
-            for ( k = 1 ; k <= 9 ; k++ ){
-              Node* nuevoNodo = copy(n);
-              if (is_valid(nuevoNodo) == 1){
-                nuevoNodo->sudo[i][j] = k;
-                pushBack(list, nuevoNodo);
-              }else{
-                break;
-              }
-            }
-              
+  for (i = 0; i < 9; i++) {
+    for (j = 0; j < 9; j++) {
+      if (n->sudo[i][j] == 0) {
+        int valid = 1;
+        for (k = 1; k <= 9; k++) {
+          Node* nuevoNodo = copy(n);
+          nuevoNodo->sudo[i][j] = k;
+          if (is_valid(nuevoNodo) == 1) {
+            pushBack(list, nuevoNodo);
+          } else {
+            free(nuevoNodo);
+            valid = 0;
+            break;
           }
         }
+        if (!valid) {
+          break;
+        }
+      }
     }
-    return list;
+    if (!valid) {
+      break;
+    }
+  }
+  
+  return list;
 }
 
 
