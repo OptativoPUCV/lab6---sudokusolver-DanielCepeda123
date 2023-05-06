@@ -71,8 +71,7 @@ int is_valid(Node* n){
         }
       }
     }
-
-    int submatriz[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+  }
   
   for (k = 0; k < 9; k++) {
     for (p = 0; p < 9; p++) {
@@ -87,12 +86,8 @@ int is_valid(Node* n){
         }
       }
     }
-    
-  for (num = 1; num <= 9; num++) {
-    submatriz[num] = 0;
-  }
-}
-  }  
+    int submatriz[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+}    
   return 1;
 }
 
