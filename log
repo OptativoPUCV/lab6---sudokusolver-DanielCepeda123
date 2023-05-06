@@ -438,3 +438,17 @@ Sat 06 May 2023 08:37:15 PM UTC:
  tests:  5|3
 total_score: 35/70
 4e5971a
+Sat 06 May 2023 08:42:21 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:117:37: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+  117 |               if (is_valid(n) == 0) return;
+      |                                     ^~~~~~
+sudoku.c:105:7: note: declared here
+  105 | List* get_adj_nodes(Node* n){
+      |       ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bda0e3b
