@@ -696,3 +696,19 @@ sudoku.c:49:7: error: unused variable ‘filas’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e632a3f
+Sat 06 May 2023 11:40:37 PM UTC: 
+ sudoku.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:54:17: error: expected expression before ‘{’ token
+   54 |     filas[10] = {0,0,0,0,0,0,0,0,0};
+      |                 ^
+sudoku.c:68:20: error: expected expression before ‘{’ token
+   68 |     columnas[10] = {0,0,0,0,0,0,0,0,0};
+      |                    ^
+sudoku.c:82:21: error: expected expression before ‘{’ token
+   82 |     submatriz[10] = {0,0,0,0,0,0,0,0,0};
+      |                     ^
+Compilation failed
+4a9d37e
