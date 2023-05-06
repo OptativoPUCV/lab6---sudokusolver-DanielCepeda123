@@ -75,8 +75,8 @@ int is_valid(Node* n){
       
   for(k = 0 ; k < 9 ; k++)
   {
-    int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-    int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    //int filas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    //int columnas[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
     
     for(p=0; p<9; p++){
       int i=3*(k/3) + (p/3);

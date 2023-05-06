@@ -395,3 +395,17 @@ sudoku.c:78:9: error: unused variable ‘filas’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 830c236
+Sat 06 May 2023 08:16:54 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:83:11: error: unused variable ‘j’ [-Werror=unused-variable]
+   83 |       int j=3*(k%3) + (p%3);
+      |           ^
+sudoku.c:82:11: error: unused variable ‘i’ [-Werror=unused-variable]
+   82 |       int i=3*(k/3) + (p/3);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+6a1d2fd
