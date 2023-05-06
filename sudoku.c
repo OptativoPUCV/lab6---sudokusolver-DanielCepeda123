@@ -46,6 +46,9 @@ void print_node(Node* n){
 int is_valid(Node* n){
   
   int i, j, k, p, num;
+  int filas[10] = {0,0,0,0,0,0,0,0,0};
+  int columnas[10] = {0,0,0,0,0,0,0,0,0};
+  int submatriz[10] = {0,0,0,0,0,0,0,0,0};
 
   for(i = 0 ; i < 9 ; i++){
     int filas[10] = {0,0,0,0,0,0,0,0,0};
@@ -89,8 +92,7 @@ int is_valid(Node* n){
           return 0;
         }
       }
-      //printf("%d ",nodo->sudo[i][j]);
-      //if(p%3 == 2) printf("\n");
+      
     }
   }
   
