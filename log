@@ -837,3 +837,17 @@ sudoku.c:138:14: error: unused variable ‘auxL’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 da43612
+Sun 07 May 2023 01:09:27 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:148:31: error: invalid use of incomplete typedef ‘List’
+  148 |         auxL = listaAdyacentes->first;
+      |                               ^~
+sudoku.c:138:14: error: variable ‘auxL’ set but not used [-Werror=unused-but-set-variable]
+  138 |   Node* aux, auxL;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+725c085

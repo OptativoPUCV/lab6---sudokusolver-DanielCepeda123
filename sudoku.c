@@ -145,7 +145,7 @@ Node* DFS(Node* initial, int* cont){
     sizeLista = get_size(listaAdyacentes);
     for(i = 0 ; i < sizeLista ; i++)
       {
-        //if(sizeLista == 0) auxL = front(listaAdyacentes);
+        auxL = listaAdyacentes->first;
         
       }
   }
