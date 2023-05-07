@@ -169,7 +169,8 @@ Node* DFS(Node* initial, int* cont){
       push(pila, aux);
       aux = next(listaAdyacentes);
     }
-    
+    free(aux);
+    free(n);
   }
   
   return NULL;
