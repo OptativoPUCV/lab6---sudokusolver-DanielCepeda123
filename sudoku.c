@@ -158,7 +158,18 @@ Node* DFS(Node* initial, int* cont){
   push(pila, initial);
 
   while(get_size(pila) != 0){
-    Node* n = top(pila); 
+    (*cont)++;
+    Node* n = top(pila);
+    pop(pila);
+    if(is_final(n) == 1) return n;
+    List* listaAdyacentes = get_adj_nodes(n);
+    Node* aux = first(listaAdyacentes);
+
+    while(aux){
+      push(pila, aux);
+      aux = next(listaAdyacentes);
+    }
+    
   }
   
   return NULL;
