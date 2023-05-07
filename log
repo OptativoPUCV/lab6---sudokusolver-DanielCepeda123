@@ -851,3 +851,8 @@ sudoku.c:138:14: error: variable ‘auxL’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 725c085
+Sun 07 May 2023 01:19:32 AM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|0
+86a03cf

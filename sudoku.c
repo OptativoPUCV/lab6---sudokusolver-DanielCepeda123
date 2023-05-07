@@ -135,7 +135,7 @@ Node* DFS(Node* initial, int* cont){
   Stack* pila = createStack();
   List* listaAdyacentes = createList();
   int sizeLista, i;
-  Node* aux, auxL;
+  Node* aux;
   push(pila, initial);
   
   while(!is_empty(pila)){
@@ -145,8 +145,8 @@ Node* DFS(Node* initial, int* cont){
     sizeLista = get_size(listaAdyacentes);
     for(i = 0 ; i < sizeLista ; i++)
       {
-        auxL = listaAdyacentes->first;
-        
+        push(pila, first(listaAdyacentes));
+        popFront(listaAdyacentes);
       }
   }
   return NULL;
