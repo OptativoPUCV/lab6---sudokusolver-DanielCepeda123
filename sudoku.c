@@ -132,8 +132,8 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  Stack* pila = createStack();
-  List* listaAdyacentes;
+  /*Stack* pila = createStack();
+  List* listaAdyacentes = (List*) malloc(sizeof(List *));
   int sizeLista, i;
   Node* aux = initial;
   push(pila, initial);
@@ -152,7 +152,10 @@ Node* DFS(Node* initial, int* cont){
       }
   }
   
-  free(aux);
+  free(aux);*/
+
+
+  
   return NULL;
 }
 
