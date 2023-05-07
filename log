@@ -758,3 +758,14 @@ sudoku.c:136:9: error: variable ‘listaAdyacentes’ set but not used [-Werror=
 cc1: all warnings being treated as errors
 Compilation failed
 21fd3fc
+Sun 07 May 2023 12:24:36 AM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:137:7: error: variable ‘sizeLista’ set but not used [-Werror=unused-but-set-variable]
+  137 |   int sizeLista;
+      |       ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+584cde2
