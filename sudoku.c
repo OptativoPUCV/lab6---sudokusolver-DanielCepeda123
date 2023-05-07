@@ -143,13 +143,7 @@ Node* DFS(Node* initial, int* cont){
     aux = top(pila);
     if(is_final(aux) == 1) return aux;
     listaAdyacentes = get_adj_nodes(aux);
-    sizeLista = get_size(listaAdyacentes);
-    
-    for(i = 0 ; i < sizeLista ; i++)
-      {
-        push(pila, front(listaAdyacentes));
-        popFront(listaAdyacentes);
-      }
+    //sizeLista = get_size(listaAdyacentes);
   }
   free(aux);
   
