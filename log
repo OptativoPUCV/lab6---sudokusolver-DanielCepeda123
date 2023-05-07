@@ -795,3 +795,14 @@ Sun 07 May 2023 12:54:24 AM UTC:
  tests:  7|1
 total_score: 55/70
 8226a5f
+Sun 07 May 2023 12:56:59 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:120:1: error: control reaches end of non-void function [-Werror=return-type]
+  120 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d4a2dd4
