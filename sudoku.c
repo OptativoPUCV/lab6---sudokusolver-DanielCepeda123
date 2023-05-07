@@ -155,6 +155,7 @@ Node* DFS(Node* initial, int* cont){
   free(aux);*/
 
   Stack* pila = createStack();
+  push(pila, initial);
   
   return NULL;
 }

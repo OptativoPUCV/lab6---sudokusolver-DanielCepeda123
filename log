@@ -1058,3 +1058,9 @@ sudoku.c:157:10: error: unused variable ‘pila’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c76ed75
+Sun 07 May 2023 02:25:57 AM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  7|1
+total_score: 55/70
+dbd7593
