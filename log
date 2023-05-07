@@ -812,3 +812,17 @@ Sun 07 May 2023 12:57:08 AM UTC:
  tests:  7|1
 total_score: 55/70
 0845a48
+Sun 07 May 2023 01:02:40 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:148:35: error: incompatible types when assigning to type ‘Node’ from type ‘void *’
+  148 |         if(sizeLista == 0) auxL = front(listaAdyacentes);
+      |                                   ^~~~~
+sudoku.c:138:14: error: variable ‘auxL’ set but not used [-Werror=unused-but-set-variable]
+  138 |   Node* aux, auxL;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b8ed937

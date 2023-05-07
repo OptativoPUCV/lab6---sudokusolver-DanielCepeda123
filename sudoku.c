@@ -132,7 +132,7 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
- /* Stack* pila = createStack();
+  Stack* pila = createStack();
   List* listaAdyacentes = createList();
   int sizeLista, i;
   Node* aux, auxL;
@@ -148,7 +148,7 @@ Node* DFS(Node* initial, int* cont){
         if(sizeLista == 0) auxL = front(listaAdyacentes);
         
       }
-  }*/
+  }
   return NULL;
 }
 
