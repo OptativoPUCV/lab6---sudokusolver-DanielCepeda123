@@ -135,7 +135,7 @@ Node* DFS(Node* initial, int* cont){
   Stack* pila = createStack();
   List* listaAdyacentes;
   int sizeLista, i;
-  Node* aux;
+  Node* aux = initial;
   push(pila, initial);
   
   while(get_size(pila) != 0){
@@ -151,8 +151,8 @@ Node* DFS(Node* initial, int* cont){
         popBack(listaAdyacentes);
       }
   }
-  free(aux);
   
+  free(aux);
   return NULL;
 }
 
