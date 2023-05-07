@@ -142,7 +142,7 @@ Node* DFS(Node* initial, int* cont){
     (*cont)++; 
     aux = top(pila);
     if(is_final(aux) == 1) return aux;
-    listaAdyacentes = get_adj_nodes(aux);
+    //listaAdyacentes = get_adj_nodes(aux);
     //sizeLista = get_size(listaAdyacentes);
   }
   free(aux);

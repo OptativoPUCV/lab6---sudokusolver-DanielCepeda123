@@ -994,3 +994,23 @@ sudoku.c:148:3: error: ‘aux’ may be used uninitialized in this function [-We
 cc1: all warnings being treated as errors
 Compilation failed
 3a8966c
+Sun 07 May 2023 02:20:23 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:137:18: error: unused variable ‘i’ [-Werror=unused-variable]
+  137 |   int sizeLista, i;
+      |                  ^
+sudoku.c:137:7: error: unused variable ‘sizeLista’ [-Werror=unused-variable]
+  137 |   int sizeLista, i;
+      |       ^~~~~~~~~
+sudoku.c:136:9: error: unused variable ‘listaAdyacentes’ [-Werror=unused-variable]
+  136 |   List* listaAdyacentes;
+      |         ^~~~~~~~~~~~~~~
+sudoku.c:148:3: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  148 |   free(aux);
+      |   ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+43ff906
