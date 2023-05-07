@@ -105,14 +105,14 @@ List* get_adj_nodes(Node* n){
       for( j = 0 ; j < 9 ; j++)
         {
           if (n->sudo[i][j] == 0){
-            for ( k = 1 ; k <= 9 ; k++ ){
+            for( k = 1 ; k <= 9 ; k++ ){
               Node* nuevoNodo = copy(n);
                 nuevoNodo->sudo[i][j] = k;
                 if(is_valid(nuevoNodo) == 1){
                   pushBack(list, nuevoNodo);
                 }
             }
-              
+             return list; 
           }
         }
     }
