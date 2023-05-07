@@ -769,3 +769,17 @@ sudoku.c:137:7: error: variable ‘sizeLista’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 584cde2
+Sun 07 May 2023 12:41:54 AM UTC: 
+ sudoku.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:148:39: error: incompatible types when assigning to type ‘Node’ from type ‘void *’
+  148 |         if(sizeLista == 0) auxLista = first(listaAdyacentes);
+      |                                       ^~~~~
+sudoku.c:138:14: error: variable ‘auxLista’ set but not used [-Werror=unused-but-set-variable]
+  138 |   Node* aux, auxLista;
+      |              ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+03fcf5e
