@@ -887,3 +887,17 @@ sudoku.c:136:9: error: unused variable ‘listaAdyacentes’ [-Werror=unused-var
 cc1: all warnings being treated as errors
 Compilation failed
 f2085c0
+Sun 07 May 2023 01:21:46 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:137:18: error: unused variable ‘i’ [-Werror=unused-variable]
+  137 |   int sizeLista, i;
+      |                  ^
+sudoku.c:137:7: error: unused variable ‘sizeLista’ [-Werror=unused-variable]
+  137 |   int sizeLista, i;
+      |       ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e0a5a98
