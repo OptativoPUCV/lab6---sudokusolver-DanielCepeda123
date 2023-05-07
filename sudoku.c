@@ -133,22 +133,22 @@ int is_final(Node* n){
 
 Node* DFS(Node* initial, int* cont){
   Stack* pila = createStack();
-  //List* listaAdyacentes = createList();
+  List* listaAdyacentes = createList();
   int sizeLista, i;
   Node* aux;
   push(pila, initial);
   
-  while(top(pila) != NULL){
+  while(get_size(pila) != 0){
     aux = top(pila);
     if(is_final(aux) == 1) return aux;
-    /*listaAdyacentes = get_adj_nodes(aux);
+    listaAdyacentes = get_adj_nodes(aux);
     sizeLista = get_size(listaAdyacentes);
     
     for(i = 0 ; i < sizeLista ; i++)
       {
         push(pila, first(listaAdyacentes));
         popFront(listaAdyacentes);
-      }*/
+      }
   }
   return NULL;
 }
