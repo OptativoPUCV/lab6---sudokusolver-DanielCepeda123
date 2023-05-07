@@ -138,8 +138,8 @@ Node* DFS(Node* initial, int* cont){
   Node* aux;
   push(pila, initial);
   
-  /*while(sizeof(pila) != 0){
-    cont++; 
+  while(get_size(pila) != 0){
+    (*cont)++; 
     aux = top(pila);
     if(is_final(aux) == 1) return aux;
     listaAdyacentes = get_adj_nodes(aux);
@@ -150,24 +150,8 @@ Node* DFS(Node* initial, int* cont){
         push(pila, front(listaAdyacentes));
         popFront(listaAdyacentes);
       }
-      free(aux);
-  }*/
-
-  do{
-    cont++; 
-    aux = top(pila);
-    if(is_final(aux) == 1) return aux;
-    listaAdyacentes = get_adj_nodes(aux);
-    sizeLista = get_size(listaAdyacentes);
-    
-    for(i = 0 ; i < sizeLista ; i++)
-      {
-        push(pila, front(listaAdyacentes));
-        popFront(listaAdyacentes);
-      }
-      free(aux);
-    
-  }while(sizeof(pila) != 0);
+  }
+  free(aux);
   
   return NULL;
 }
