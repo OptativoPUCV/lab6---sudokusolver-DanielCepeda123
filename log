@@ -747,3 +747,14 @@ Sat 06 May 2023 11:56:27 PM UTC:
  tests:  6|2
 total_score: 45/70
 c5b8a56
+Sun 07 May 2023 12:23:17 AM UTC: 
+ sudoku.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:9: error: variable ‘listaAdyacentes’ set but not used [-Werror=unused-but-set-variable]
+  136 |   List* listaAdyacentes = createList();
+      |         ^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+21fd3fc
